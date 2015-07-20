@@ -1,7 +1,7 @@
-from slamon.afm.afm_app import app
-from slamon.afm.database import create_session
-from slamon.afm.tables import Agent, Task
-from slamon.afm.settings import Settings
+from slamon_afm.afm_app import app
+from slamon_afm.database import create_session
+from slamon_afm.tables import Agent, Task
+from slamon_afm.settings import Settings
 from bottle import HTTPError
 from datetime import datetime, timedelta
 

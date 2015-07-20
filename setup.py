@@ -3,10 +3,11 @@
 from setuptools import setup
 # TODO: Fix for AFM
 setup(
-    name='slamon-agent',
-    version='0.9.0.post3',
-    description='Python implementation of a SLAMon Agent',
-    url='https://github.com/SLAMon/slamon-python-agent',
+    name='slamon-afm',
+    version='0.9.0',
+    description='SLAMon Agent Fleet Manager that controls deployed agents by given them tasks. '
+                'Part of the Coordinator that can be polled for task results.',
+    url='https://github.com/SLAMon/slamon-agent-fleet-manager',
     author='SLAMon',
     author_email='slamon.organization@gmail.com',
     license='Apache License v2.0',
@@ -15,14 +16,15 @@ setup(
 and executes tasks retrieved.\nAimed to be used on Unix platforms. The agent can be used either from a python script \
 or via command line script.\nRead more from the repository for examples and instructions.',
     packages=[
-        'slamon_agent',
-        'slamon_agent.handlers',
+        'slamon_afm',
+        'slamon_afm.routes',
     ],
     install_requires=[
-        'python_dateutil>= 2.4.2, <3.0',
-        'requests>=2.5.4.1, <3.0'
+        'bottle>=0.12.8, <1.0',
+        'sqlalchemy>=1.0.6, <2.0'
     ],
     entry_points={
+        # TODO: Create AFM console script
         'console_scripts': [
             'slamon-agent = slamon_agent.agent:main'
         ]

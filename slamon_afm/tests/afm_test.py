@@ -1,5 +1,5 @@
-from slamon.afm.database import Base, init_connection, engine
-from slamon.afm.tables import Agent, AgentCapability, Task
+from slamon_afm.database import Base, init_connection, engine
+from slamon_afm.tables import Agent, AgentCapability, Task
 
 
 class AFMTest(object):

@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, CHAR, DateTime, String, ForeignKey, PrimaryKeyConstraint, Unicode
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from slamon.afm.database import Base
+from slamon_afm.database import Base
 
 
 class Agent(Base):

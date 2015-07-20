@@ -1,4 +1,4 @@
-from slamon.afm.settings import Settings
+from slamon_afm.settings import Settings
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy import create_engine

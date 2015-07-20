@@ -1,8 +1,8 @@
 from bottle import request, HTTPError, static_file
 from sqlalchemy.exc import IntegrityError, ProgrammingError
-from slamon.afm.tables import Agent, Task
-from slamon.afm.afm_app import app
-from slamon.afm.database import create_session
+from slamon_afm.tables import Agent, Task
+from slamon_afm.afm_app import app
+from slamon_afm.database import create_session
 import logging
 import jsonschema
 import os.path

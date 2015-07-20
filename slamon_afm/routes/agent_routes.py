@@ -1,8 +1,8 @@
-from slamon.afm.tables import Agent, AgentCapability, Task
-from slamon.afm.afm_app import app
-from slamon.afm.database import create_session
-from slamon.afm.settings import Settings
-from slamon.slamon_logging import getSLAMonLogger
+from slamon_afm.tables import Agent, AgentCapability, Task
+from slamon_afm.afm_app import app
+from slamon_afm.database import create_session
+from slamon_afm.settings import Settings
+from slamon_afm.slamon_logging import getSLAMonLogger
 from datetime import datetime, timedelta
 from bottle import request, HTTPError
 from sqlalchemy.orm.exc import NoResultFound

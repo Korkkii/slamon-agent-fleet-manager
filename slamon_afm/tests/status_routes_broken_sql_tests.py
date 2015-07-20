@@ -1,6 +1,6 @@
-from slamon.afm.routes import status_routes  # Shows as unused but is actually required for routes
-from slamon.afm.afm_app import app
-from slamon.afm.database import init_connection
+from slamon_afm.routes import status_routes  # Shows as unused but is actually required for routes
+from slamon_afm.afm_app import app
+from slamon_afm.database import init_connection
 from webtest import TestApp
 import unittest
 import os

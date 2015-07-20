@@ -2,7 +2,7 @@ import logging
 import os, os.path
 
 
-__logfile_path__ = "slamon/log/slamon_logfile.log"
+__logfile_path__ = "slamon_afm/slamon_logfile.log"
 
 if 'OPENSHIFT_DATA_DIR' in os.environ:
     __logfile_path__ = os.path.join(os.environ['OPENSHIFT_DATA_DIR'], "slamon_logfile.log")
