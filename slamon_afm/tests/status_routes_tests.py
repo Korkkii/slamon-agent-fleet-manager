@@ -1,7 +1,8 @@
-from slamon_afm.routes import status_routes  # Shows as unused but is actually required for routes
+from webtest import TestApp
+
 from slamon_afm.afm_app import app
 from slamon_afm.tests.afm_test import AFMTest
-from webtest import TestApp
+from slamon_afm.routes import status_routes  # Shows as unused but is actually required for routes
 
 
 class TestStatusValid(AFMTest):

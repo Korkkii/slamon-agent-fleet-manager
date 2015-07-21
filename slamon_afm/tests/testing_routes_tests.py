@@ -1,8 +1,9 @@
-from slamon_afm.routes.testing import testing_routes  # Shows as unused but is actually required for routes
-from slamon_afm.afm_app import app
-from slamon_afm.tests.agent_routes_tests import AFMTest
 from webtest import TestApp
 import jsonschema
+
+from slamon_afm.afm_app import app
+from slamon_afm.tests.agent_routes_tests import AFMTest
+from slamon_afm.routes.testing import testing_routes  # Shows as unused but is actually required for routes
 
 
 class TestDevRoutes(AFMTest):

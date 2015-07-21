@@ -1,15 +1,17 @@
-from slamon_afm.tables import Agent, AgentCapability, Task
-from slamon_afm.afm_app import app
-from slamon_afm.database import create_session
-from slamon_afm.settings import Settings
-from slamon_afm.slamon_logging import getSLAMonLogger
 from datetime import datetime, timedelta
+import json
+
 from bottle import request, HTTPError
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy import and_
 from dateutil import tz
 import jsonschema
-import json
+
+from slamon_afm.tables import Agent, AgentCapability, Task
+from slamon_afm.afm_app import app
+from slamon_afm.database import create_session
+from slamon_afm.settings import Settings
+from slamon_afm.slamon_logging import getSLAMonLogger
 
 logger = getSLAMonLogger(__name__)
 

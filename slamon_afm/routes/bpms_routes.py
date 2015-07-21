@@ -1,12 +1,14 @@
-from slamon_afm.tables import Task
-from slamon_afm.afm_app import app
-from slamon_afm.slamon_logging import getSLAMonLogger
+import json
+
 from sqlalchemy.orm.exc import NoResultFound
 from sqlalchemy.exc import IntegrityError, ProgrammingError
 from bottle import request, HTTPError
-from slamon_afm.database import create_session
 import jsonschema
-import json
+
+from slamon_afm.tables import Task
+from slamon_afm.afm_app import app
+from slamon_afm.slamon_logging import getSLAMonLogger
+from slamon_afm.database import create_session
 
 logger = getSLAMonLogger(__name__)
 

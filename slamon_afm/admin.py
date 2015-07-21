@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
-from slamon_afm.tables import Agent, AgentCapability, Task
-from slamon_afm.database import Base, engine, init_connection
 import logging
 import argparse
 import sys
+
+from slamon_afm.tables import Agent, AgentCapability, Task
+from slamon_afm.database import Base, engine, init_connection
 
 logger = logging.getLogger('admin')
 

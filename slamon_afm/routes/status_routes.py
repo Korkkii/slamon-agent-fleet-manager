@@ -1,9 +1,11 @@
+from datetime import datetime, timedelta
+
+from bottle import HTTPError
+
 from slamon_afm.afm_app import app
 from slamon_afm.database import create_session
 from slamon_afm.tables import Agent, Task
 from slamon_afm.settings import Settings
-from bottle import HTTPError
-from datetime import datetime, timedelta
 
 
 @app.get('/status')
@@ -27,7 +29,7 @@ def status():
 
     try:
         num_agents = session.query(Agent).filter(Agent.last_seen > agent_time_threshold).count()
-        tasks_waiting = session.query(Task).filter(Task.claimed == None).count()
+        tasks_waiting = session.query(Task).filter(Task.claimed is None).count()
     except Exception as e:
         raise HTTPError(500, 'Failed to query tasks and agents ' + str(e))
     finally:

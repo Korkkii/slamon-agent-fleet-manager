@@ -1,11 +1,13 @@
-from slamon_afm.routes import bpms_routes  # Shows as unused but is actually required for routes
+from datetime import datetime
+import json
+
+from webtest import TestApp
+
 from slamon_afm.afm_app import app
 from slamon_afm.tables import Task
 from slamon_afm.tests.afm_test import AFMTest
 from slamon_afm.database import create_session
-from datetime import datetime
-from webtest import TestApp
-import json
+from slamon_afm.routes import bpms_routes  # Shows as unused but is actually required for routes
 
 
 class TestBMPSRoutes(AFMTest):

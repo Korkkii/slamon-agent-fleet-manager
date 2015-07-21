@@ -1,11 +1,13 @@
-from slamon_afm.routes import agent_routes  # Shows as unused but is actually required for routes
+from datetime import datetime
+
+from webtest import TestApp
+import jsonschema
+
 from slamon_afm.afm_app import app
 from slamon_afm.tables import Agent, AgentCapability, Task
 from slamon_afm.database import create_session
 from slamon_afm.tests.afm_test import AFMTest
-from datetime import datetime
-from webtest import TestApp
-import jsonschema
+from slamon_afm.routes import agent_routes  # Shows as unused but is actually required for routes
 
 
 class TestPolling(AFMTest):

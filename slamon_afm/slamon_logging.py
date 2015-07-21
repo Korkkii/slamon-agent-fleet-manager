@@ -1,5 +1,5 @@
 import logging
-import os, os.path
+import os
 
 
 __parent_directory = os.path.dirname(__file__)
