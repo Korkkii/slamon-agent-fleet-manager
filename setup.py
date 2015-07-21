@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import find_packages, setup
 # TODO: Fix for AFM
 setup(
     name='slamon-afm',
@@ -12,16 +12,13 @@ setup(
     author_email='slamon.organization@gmail.com',
     license='Apache License v2.0',
     platforms=['Python 3.3+'],
-    long_description='The implementation of SLAMon agent on Python 3.4. The agent connects to an Agent Fleet Manager, \
-and executes tasks retrieved.\nAimed to be used on Unix platforms. The agent can be used either from a python script \
-or via command line script.\nRead more from the repository for examples and instructions.',
-    packages=[
-        'slamon_afm',
-        'slamon_afm.routes',
-    ],
+    long_description='',
+    packages=find_packages(),
     install_requires=[
         'bottle>=0.12.8, <1.0',
-        'sqlalchemy>=1.0.6, <2.0'
+        'sqlalchemy>=1.0.6, <2.0',
+        'jsonschema>=2.5.1, <3.0',
+        'python_dateutil>= 2.4.2, <3.0'
     ],
     entry_points={
         # TODO: Create AFM console script
