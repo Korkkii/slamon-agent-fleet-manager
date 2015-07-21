@@ -18,7 +18,7 @@ $SLAMON_ROOT refers to the directory where the root of this repository lies
 * virtualenv
 
 # Setting up
-File slamon/afm/settings.py contains AFM settings in following format:
+File slamon_afm/settings.py contains AFM settings in following format:
 ```
 class Settings:
     port = 8080  # Port for the server
@@ -42,13 +42,13 @@ postgres=# GRANT ALL PRIVILEGES ON DATABASE slamon_tests TO afm;
 To create needed tables:
 ```
 cd $SLAMON_ROOT
-python ./slamon/afm/admin.py --create-tables
+python ./slamon_afm/admin.py --create-tables
 ```
 
 To delete tables:
 ```
 cd $SLAMON_ROOT
-python ./slamon/afm/admin.py --drop-tables
+python ./slamon_afm/admin.py --drop-tables
 ```
 
 ## Creating python virtualenv and installing needed packages
@@ -65,7 +65,7 @@ After entering the virtual environment type in a terminal following:
 ```
 cd $SLAMON_ROOT
 export PYTHONPATH=`pwd`
-python ./slamon/afm/afm.py
+python ./slamon_afm/afm.py
 ```
 ### Running tests
 In virtual environment:
