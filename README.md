@@ -1,15 +1,15 @@
 SLAMon Agent Fleet Manager (AFM)
 ================================
 
-[![License][license]](http://www.apache.org/licenses/LICENSE-2.0)
+[![License](https://img.shields.io/:license-Apache%20License%20v2.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 [![Latest PyPI Version](https://badge.fury.io/py/slamon-afm.svg)](http://badge.fury.io/py/slamon-afm)
-[![Supported Python Versions](https://img.shields.io/pypi/pyversions/slamon-afm.svg)](pypi)
-[![Requirements Status][requirements_img]](requirements)
+[![Supported Python Versions](https://img.shields.io/pypi/pyversions/slamon-afm.svg)](https://pypi.python.org/pypi/slamon-afm/)
+[![Requirements Status](https://requires.io/github/Korkkii/slamon-agent-fleet-manager/requirements.svg?branch=separation)](https://requires.io/github/Korkkii/slamon-agent-fleet-manager/requirements/?branch=separation)
 
-[![Build Status][ci_status]](https://travis-ci.org/Korkkii/slamon-agent-fleet-manager.svg?branch=separation)
-[![Coverage Status][coveralls]](https://coveralls.io/github/Korkkii/slamon-agent-fleet-manager?branch=separation)
-[![Code Health][codehealth]](https://landscape.io/github/Korkkii/slamon-agent-fleet-manager/separation)
+[![Build Status](https://travis-ci.org/Korkkii/slamon-agent-fleet-manager.svg?branch=separation)](https://travis-ci.org/Korkkii/slamon-agent-fleet-manager.svg?branch=separation)
+[![Coverage Status](https://coveralls.io/repos/Korkkii/slamon-agent-fleet-manager/badge.svg?branch=separation&service=github)](https://coveralls.io/github/Korkkii/slamon-agent-fleet-manager?branch=separation)
+[![Code Health](https://landscape.io/github/Korkkii/slamon-agent-fleet-manager/separation/landscape.svg?style=flat)](https://landscape.io/github/Korkkii/slamon-agent-fleet-manager/separation)
 
 $SLAMON_ROOT refers to the directory where the root of this repository lies
 
@@ -78,12 +78,3 @@ or (if coverage report is also wanted)
 cd $SLAMON_ROOT
 nosetests --with-coverage --cover-package=slamon
 ```
-
-[license]: https://img.shields.io/:license-Apache%20License%20v2.0-blue.svg
-[ci_status]: https://travis-ci.org/Korkkii/slamon-agent-fleet-manager.svg?branch=separation
-[coveralls]: https://coveralls.io/repos/Korkkii/slamon-agent-fleet-manager/badge.svg?branch=separation&service=github
-[codehealth]: https://landscape.io/github/Korkkii/slamon-agent-fleet-manager/separation/landscape.svg?style=flat
-[latest_version]: https://badge.fury.io/py/slamon-afm.svg
-[pypi]: https://pypi.python.org/pypi/slamon-afm/
-[requirements_img]: https://requires.io/github/Korkkii/slamon-agent-fleet-manager/requirements.svg?branch=separation
-[requirements]: https://requires.io/github/Korkkii/slamon-agent-fleet-manager/requirements/?branch=separation
