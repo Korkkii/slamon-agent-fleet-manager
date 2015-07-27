@@ -9,9 +9,6 @@ matrix:
 cache:
   directory:
   - "$HOME/.cache/pip"
-addons:
-  apt_packages:
-    - pandoc
 install:
 - pip install -r test_requirements.txt
 - pip install .
@@ -36,14 +33,3 @@ notifications:
   "    on_start": false
 after_success:
 - overalls
-- pip install pypandoc
-deploy:
-  provider: pypi
-  user: slamon
-  server: https://testpypi.python.org/pypi
-  password:
-    secure: fTjbsOTMXp9m9QREp5fhBhIhlSJfh4E7tSlelvbFv4EJjZUXIXo/bNlOv13UOqDvRTi6pspdw+jPjUJJVRSK5h2Jo6JuMKwT8b3ccZmFqvj2/9K/fPp7k6n9qAdvcXaC9JifCIPg0C1+6whRtaNS6Uj2r8oEJ0f/smpKDi+5nDxHq7m/HF2bEGmuE9Drlf8Uus31kgVtyrtSlWfp8GlVvGXl1WEp8A5eSGhoRDw2U0YJCnSNBplXePFrpy4vDigBAeXIfFdCG2iwWv3/BERcy77FdmB53ovqHrK1LRehkKVMH92DOGXV1UPixxAWNBCagRrsPIOg5ZoR+UXLq/ZCsbc9TQyUDK0lw0nji4HuhtEff9y5xUcjS7jjGtguRAIcd0Mh95as36U48EEcHf0W7PdNo4dZDGJYfdw1Jw//lXg7yjcvP/qxdN1f2SEI9l2+Kwh+vVFAb26TSZDNOljpoNh9MV0vXSy6IyhYcToQ5MbYmDIggoskjXV83fqmCRKGvthMYsNnC6yuUUpOLD2Bd7oTgEBMYNsCeyMerNHQ7L1QjfgGPNPAI+Isi5XqoS1fNEOQ5hV2EjBL0+fN+ngnmF3/GnzaCgR+6HOeRQ3aAvkys1Xwwzm/ifwlKI2DZwJPBeE8CVY9qxKHya9s64loATOmg+j5ff76ZnAm30xn/mE=
-  on:
-    tags: true
-    repo: Korkkii/slamon-agent-fleet-manager
-    branch: separation
