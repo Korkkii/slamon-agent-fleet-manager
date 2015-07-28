@@ -16,6 +16,7 @@ setup(
     license='Apache License v2.0',
     platforms=['Python 3.3+'],
     packages=find_packages(),
+    package_data={'slamon_afm/routes/testing': ['testing.html']},
     install_requires=[
         'bottle>=0.12.8, <1.0',
         'sqlalchemy>=1.0.6, <2.0',
