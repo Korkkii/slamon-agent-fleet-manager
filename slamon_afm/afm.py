@@ -7,6 +7,7 @@ from bottle import run
 from slamon_afm import afm_app
 from slamon_afm.settings import Settings
 from slamon_afm.routes import agent_routes, bpms_routes, status_routes
+from slamon_afm.routes.testing import testing_routes
 from slamon_afm.database import init_connection
 
 
