@@ -26,6 +26,11 @@ setup(
         'jsonschema>=2.5.1, <3.0',
         'python_dateutil>= 2.4.2, <3.0'
     ],
+    entry_point={
+        'console_scripts': [
+            'slamon-afm = slamon_afm.afm:main'
+        ]
+    },
     classifiers=[
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
