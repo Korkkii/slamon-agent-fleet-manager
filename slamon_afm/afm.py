@@ -46,7 +46,7 @@ def main():
     parser = argparse.ArgumentParser(description='Admin util for SLAMon Agent Fleet Manager')
     parser.add_argument('-c', '--create-tables', help='Create tables', action='store_true', default=False)
     parser.add_argument('-d', '--drop-tables', help='Drop all tables', action='store_true', default=False)
-    parser.add_argument('-h', '--host', help='Host name', action='store', require=True)
+    parser.add_argument('-n', '--host', help='Host name', action='store', required=True)
 
     init_connection(unittest=False)
 
