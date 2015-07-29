@@ -12,12 +12,8 @@ SLAMon Agent Fleet Manager (AFM)
 [![Code Health][health]](https://landscape.io/github/SLAMon/slamon-agent-fleet-manager/master)
 
 
-
-$SLAMON_ROOT refers to the directory where the root of this repository lies
-
 # Requirements
-* python 3.4
-* virtualenv
+* python 3.3+
 
 # Setting up
 File slamon_afm/settings.py contains AFM settings in following format:
@@ -68,7 +64,7 @@ slamon-afm run localhost
 ```
 
 ### Running tests
-In virtual environment:
+$SLAMON_ROOT refers to the repository root.
 ```
 cd $SLAMON_ROOT
 pip install -r test_requirements.txt
@@ -89,4 +85,5 @@ nosetests --with-coverage --cover-package=slamon_afm
 [health]: https://landscape.io/github/SLAMon/slamon-agent-fleet-manager/master/landscape.svg?style=flat
 [latest_version]: https://badge.fury.io/py/slamon-afm.svg
 [pypi]: https://pypi.python.org/pypi/slamon-afm/
+
 
