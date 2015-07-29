@@ -33,3 +33,12 @@ notifications:
   "    on_start": false
 after_success:
 - overalls
+deploy:
+  provider: pypi
+  user: slamon
+  password:
+    secure: Wlx7B2JX0gkkYAABOUNByNFCMOz+qy7c05VPXYJ24n4U17BH/lzZgJwoeIJ1cJ2/rD46p97WG45zcqIi+U0hb74NeK2fz3kS075k3N8tZJ4m7UfSoqetY4Ilk4Vpiu8YkpvzPWbQWfEU2kvOED8j75vRNQoqC468uABEhP2ESqySB7ZFud+2TOXG+EfrsQPihqM8nBBPBzOR2i5E+HvVIvjEG15mhq7fkD7997Rf7apT2JZ3fjO3EuVtxyEstxDhDVye6EpPU58R5R3zC/NdpOWPqz3KzYLmrkNiXwiaiBJvANfkh9DJh5NkDas7jpL1P45HMYplSRt6xiyEdsgjjKacXn3H7Mo8Feow+C77FCGZ9bqOSWWtpo6Gp5hBqFgTiRZmINXQiIrgumhBHzmgCYOE3+6nDVDkRLkU8Ky1Eat64lJlBkbIFFFRM0ULzr1g8aVcGGNJw5LUtflJCjP8PlkkOmBS9fpkhgMxbRhmvEB9rPZ/hANNzrFrXwjK2+cmny3RHWm9e+yQap/7qvNuv32nuyr62w8l7ZVWGhYbGKRKu+ysWLfJABKxRIMEfRps8K7U+DVkVXuwTFvWpXDe8DfiKGKF1sz6faz9+t/gDegDrM01ao4tTERtlhUOSxdhu/e+o6WNQvuniavgxcVZXTZac5Hid18z/iUu2TfASdY=
+  on:
+    tags: true
+    repo: Korkkii/slamon-agent-fleet-manager
+    branch: travis_deploy
