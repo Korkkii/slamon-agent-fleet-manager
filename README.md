@@ -43,32 +43,30 @@ postgres=# GRANT ALL PRIVILEGES ON DATABASE slamon_tests TO afm;
 
 To create needed tables:
 ```
-cd $SLAMON_ROOT
-python ./slamon_afm/admin.py --create-tables
+slamon-afm create-tables
 ```
 
 To delete tables:
 ```
-cd $SLAMON_ROOT
-python ./slamon_afm/admin.py --drop-tables
+slamon-afm drop-tables
 ```
 
 ## Creating python virtualenv and installing Agent Fleet Manager
 ```
-cd $SLAMON_ROOT
-virtualenv env
-. env/bin/active
-pip install .
+pip install slamon-afm
 ```
 
 # Running
 ## Running afm
-After entering the virtual environment type in a terminal following:
+Running an instance of AFM from commandline
 ```
-cd $SLAMON_ROOT
-export PYTHONPATH=`pwd`
-python ./slamon_afm/afm.py
+slamon-afm run HOST_NAME
 ```
+For example running AFM on localhost
+```
+slamon-afm run localhost
+```
+
 ### Running tests
 In virtual environment:
 ```
