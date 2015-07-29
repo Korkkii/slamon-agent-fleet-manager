@@ -49,8 +49,7 @@ def main():
 
     run_parser = subparsers.add_parser('run', help='Run AFM',
                                        description='Run an instance of an Agent Fleet Manager that listens to given host address')
-    run_parser.add_argument('HOST', help='Host name or address e.g. localhost or 127.0.0.1', action='store',
-                            required=True)
+    run_parser.add_argument('host', help='Host name or address e.g. localhost or 127.0.0.1', action='store')
     run_parser.set_defaults(func=run_afm)
 
     create_parser = subparsers.add_parser('create-tables', help='Create SQL tables',
